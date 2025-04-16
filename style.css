@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 :root {
     --primary-bg: #f0f7ff;
     --secondary-bg: #ffffff;
@@ -268,14 +274,17 @@ footer {
 @media (max-width: 768px) {
     .landing {
         padding: 1rem;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     header {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
+        margin-bottom: 2rem;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .subtitle {
@@ -283,16 +292,52 @@ footer {
     }
 
     .game-container {
-        margin: 1rem;
+        margin: 1rem auto;
+        width: 95%;
     }
 
     .stats-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .stat {
+        flex: 1 1 auto;
+        min-width: 100px;
+        padding: 0.5rem;
+    }
+
+    .scene {
+        height: 250px;
+    }
+
+    .character {
+        width: 120px;
+        height: 120px;
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .dialog-box {
+        padding: 1rem;
+    }
+
+    #dialog-text {
+        font-size: 1rem;
+    }
+
+    .choices {
+        display: flex;
         flex-direction: column;
         gap: 0.5rem;
     }
 
-    .stat {
+    .choice {
         width: 100%;
+        margin: 0;
+        padding: 0.8rem;
     }
 }
 
