@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путь к свободе - Игра о созависимости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="landing">
+        <header>
+            <h1>Путь к свободе</h1>
+            <p class="subtitle">Исследуйте границы здоровых отношений</p>
+        </header>
+        
+        <div class="game-description">
+            <div class="description-text">
+                <p>Эта интерактивная игра поможет вам лучше понять свои границы и научиться выстраивать здоровые отношения.</p>
+                <p>Каждый выбор влияет на ваше эмоциональное состояние и развитие.</p>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="stats-container">
+                <div class="stat" id="self-esteem">
+                    <span class="stat-label">Самооценка:</span>
+                    <span class="stat-value">50</span>
+                </div>
+                <div class="stat" id="independence">
+                    <span class="stat-label">Независимость:</span>
+                    <span class="stat-value">50</span>
+                </div>
+                <div class="stat" id="happiness">
+                    <span class="stat-label">Счастье:</span>
+                    <span class="stat-value">50</span>
+                </div>
+            </div>
+
+            <div class="scene" id="scene">
+                <div class="character" id="character"></div>
+                <div class="emotions" id="emotions"></div>
+            </div>
+
+            <div class="dialog-box" id="dialog">
+                <p id="dialog-text"></p>
+                <div class="choices" id="choices"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="copyright">© 2024 Путь к свободе. Все права защищены.</p>
+            <p class="disclaimer">Эта игра создана в образовательных целях и не заменяет профессиональную психологическую помощь.</p>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
